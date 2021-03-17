@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST LELVELS - Example</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./client.js"></script>
+
+</head>
+
+<body>
+    <div id="rest_actions">
+        <div id="rest_level0" class="box-container">
+            <h2 class="box-title">
+                REST Level 0
+            </h2>
+            <div class="box-wrapper">
+                <div class="first box-field">
+                    <h6>Prima Chiamata</h6>
+                    <input type="text" placeholder="es. /appointmentService" value="/appointmentService">
+                    <button>INVIA</button>
+                </div>
+                <div class="second box-field">
+                    <h6>Seconda Chiamata</h6>
+                    <input type="text" placeholder="es. /appointmentService" value="/appointmentService">
+                    <button>INVIA</button>
+                </div>
+            </div>
+        </div>
+        <div id="rest_level1" class="box-container">
+            <h2 class="box-title">
+                REST Level 1
+            </h2>
+            <div class="box-wrapper">
+                <div class="first box-field">
+                    <h6>Prima Chiamata</h6>
+                    <input type="text" placeholder="es. /doctors/mrgreen" value="/doctors/mrgreen">
+                    <button>INVIA</button>
+                </div>
+                <div class="second box-field">
+                    <h6>Seconda Chiamata</h6>
+                    <input type="text" placeholder="es. /slots/1234" value="/slots/1234">
+                    <button>INVIA</button>
+                </div>
+            </div>
+        </div>
+        <div id="rest_level2" class="box-container">
+            <h2 class="box-title">
+                REST Level 2
+            </h2>
+            <div class="box-wrapper">
+                <div class="first box-field">
+                    <h6>Prima Chiamata</h6>
+                    <input type="text" placeholder="es. /doctors/mjones/slots?date=2021-05-31"
+                        value="/doctors/mjones/slots?date=2021-05-31">
+                    <button>INVIA</button>
+                </div>
+                <div class="second box-field">
+                    <h6>Seconda Chiamata</h6>
+                    <input type="text" placeholder="es. /slots/1234" value="/slots/1234">
+                    <button>INVIA</button>
+                </div>
+            </div>
+        </div>
+        <div id="rest_level3" class="box-container">
+            <h2 class="box-title">
+                REST Level 3
+            </h2>
+            <div class="box-wrapper">
+                <div class="first box-field">
+                    <h6>Prima Chiamata</h6>
+                    <input type="text" placeholder="es. /doctors/mjones/slots?date=2021-05-31"
+                        value="/doctors/mjones/slots?date=2021-05-31">
+                    <button>INVIA</button>
+                </div>
+                <div class="second box-field">
+                    <h6>Seconda Chiamata</h6>
+                    <input type="text" placeholder="es. /slots/1234" value="/slots/1234">
+                    <button>INVIA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="rest_status">
+        <div id="rest_request">
+            <h2 class="box-title">
+                REQUEST
+            </h2>
+            <pre class="status-container"></pre>
+        </div>
+        <div id="rest_response">
+            <h2 class="box-title">
+                RESPONSE
+            </h2>
+            <pre class="status-container"></pre>
+        </div>
+    </div>
+</body>
+
+</html>
